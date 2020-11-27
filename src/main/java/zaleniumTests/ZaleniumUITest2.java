@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class ZaleniumUITest {
+public class ZaleniumUITest2 {
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
 		// TODO Auto-generated method stub
@@ -29,7 +29,7 @@ public class ZaleniumUITest {
 		WebDriver driver = new RemoteWebDriver(new URL(hubUrl), options); // Use either options for cap
 //		WebDriver driver = new RemoteWebDriver(new URL(hubUrl), cap);// Use either options for cap
 		Thread.sleep(5000);			
-		driver.get("https://test2service.dealer-fx.com");
+		driver.get("https://test2checkin.dealer-fx.com/toyota/en-us/4363/code");
 		Thread.sleep(3000);		
 		driver.manage().window().maximize();
 		System.out.println("Title of page is -->"+ driver.getTitle());
