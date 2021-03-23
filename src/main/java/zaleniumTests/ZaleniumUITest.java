@@ -24,7 +24,8 @@ public class ZaleniumUITest {
 		options.merge(cap); //add capability object
 
 		//String hubUrl = "http://192.168.56.1:4444/wd/hub";
-		String hubUrl = "http://192.168.29.29:4444/wd/hub";		
+		//String hubUrl = "http://192.168.29.29:4444/wd/hub";		
+		String hubUrl = "http://10.101.85.57:4444/wd/hub";		
 		Thread.sleep(5000);			
 		WebDriver driver = new RemoteWebDriver(new URL(hubUrl), options); // Use either options for cap
 //		WebDriver driver = new RemoteWebDriver(new URL(hubUrl), cap);// Use either options for cap
